@@ -1,0 +1,30 @@
+.list-detail-container {
+  display: none;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.list-detail-container.show {
+  display: flex;
+  gap: 110px;
+  padding-left: 320px;
+}
+
+.category-section {
+  margin-bottom: 1.5rem;
+}
+
+.category-section ul {
+  list-style: none;
+  text-align: center;
+  color: rgb(100, 100, 100);
+  line-height: 1.8;
+}
+
+
+.category-section li:hover {
+  color: darkolivegreen;
+  text-decoration: bolder;
+  cursor: pointer;
+}
