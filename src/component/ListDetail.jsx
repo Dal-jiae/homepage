@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './ListDetail.css'
+import pathMap from './PathMap';
 
 function ListDetail({show}){
   const navigate = useNavigate();
@@ -24,8 +25,13 @@ function ListDetail({show}){
   ];
 
   const handleClick = (item) => {
-    const encoded = encodeURIComponent(item);
-    navigate(`/detail/${encoded}`);
+    const route = pathMap[item];
+
+    if (route.external) {
+      window.open(route.external, '_blank');
+    } else {
+      navigate(`/detail/${route.category}/${route.id}`);
+    }
   }
 
   return(

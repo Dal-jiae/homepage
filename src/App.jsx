@@ -16,10 +16,12 @@ function App() {
 
       <Routes>
         <Route path='/' element={<MainPage />}/>
-        <Route path='/detail/:id' element={<DetailPage />} />
+
+        <Route path='/detail/:category/:id' element={<DetailPage />}/>
       </Routes>
     </>
   )
 }
 
 export default App
+

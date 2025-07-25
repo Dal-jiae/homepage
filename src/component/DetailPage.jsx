@@ -1,16 +1,27 @@
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
+import NoticeBord from "./NoticeBord";
+import ConferenceBoard from "./ConferenceBoard";
+import SymposiumBoard from "./SymposiumBoard";
 
 function DetailPage() {
-  const { id } = useParams();
-  const decodedTitle = decodeURIComponent(id);
+  const{category, id} = useParams();
 
-  return (
-    <div style={{ padding: '2rem' }}>
-      <h2>{decodedTitle}</h2>
-      <p>이곳은 '{decodedTitle}'에 대한 상세 페이지입니다.</p>
-      {/* 여기에 콘텐츠 넣기 */}
-    </div>
-  );
+  const externalLinkMap = {
+    '온라인 논문투고' : 'https://karthistory.jams.or.kr/',
+    '논문유사도검사': 'https://www.copykiller.com/',
+  }
+
+  if(category === 'news') {
+    if(id === 'notice') return <NoticeBord/>;
+    if(id === 'conference') return <ConferenceBoard/>;
+    if(id === 'symposium') return <SymposiumBoard/>;
+  }
+
+  return(
+    <>
+
+    </>
+  )
 }
 
 export default DetailPage;

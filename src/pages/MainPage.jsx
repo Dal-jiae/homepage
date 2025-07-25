@@ -1,7 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import ImageSlider from "../component/ImageSlider";
 import './MainPage.css';
 
+const arr = [
+  {title:'공지사항', url:'/detail/news/notice', img: 'notice'},
+  {title:'온라인 논문투고', url:'https://karthistory.jams.or.kr/', img: 'submission'},
+  {title:'투고규정', url:'/detail/journal/guidelines', img:'guideline'},
+  {title:'논문 작성요령', url:'/detail/submit/procedure', img:'formatting'}
+]
+
 function MainPage() {
+  const navigate = useNavigate();
+
   return(
     <>
       <div className="Main-top">
@@ -9,26 +19,24 @@ function MainPage() {
       </div>
 
       <div className="container">
-        <div className="notice-card">
-          <div className="text-box">
-          <p>공지사항 +</p>
-          </div>
-        </div>
-        <div className="submission-card" onClick={()=>{window.open('https://karthistory.jams.or.kr/', '_blank')}}>
-          <div className="text-box">
-          <p>온라인 논문투고 +</p>
-          </div>
-        </div>
-        <div className="guideline-card">
-          <div className="text-box">
-          <p>투고 규정 +</p>
-          </div>
-        </div>
-        <div className="formatting-card">
-          <div className="text-box">
-          <p>논문 작성요령 +</p>
-          </div>
-        </div>
+        {
+          arr.map((data,i) => {
+            return (
+              <div className={`${data.img}-card`} onClick={()=>{
+                if(data.url.startsWith('http')) {
+                  window.open(data.url, '_blank');
+                } else {
+                  navigate(data.url);
+                }
+              }}
+              >
+                <div className="text-box">
+                <p>{data.title} +</p>
+                </div>
+              </div>
+            )
+          })
+        }
       </div>
 
     </>
