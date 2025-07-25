@@ -14,7 +14,7 @@ function MainPage() {
           <p>공지사항 +</p>
           </div>
         </div>
-        <div className="submission-card">
+        <div className="submission-card" onClick={()=>{window.open('https://karthistory.jams.or.kr/', '_blank')}}>
           <div className="text-box">
           <p>온라인 논문투고 +</p>
           </div>
