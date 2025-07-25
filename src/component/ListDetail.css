@@ -25,6 +25,6 @@
 
 .category-section li:hover {
   color: darkolivegreen;
-  text-decoration: bolder;
+  font-weight: bolder;
   cursor: pointer;
 }

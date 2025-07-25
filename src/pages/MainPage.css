@@ -1,3 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .Main-top {
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #46a068;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 50px;
+}
+
+.container div{
+  width: 500px;
+  height: 400px;
+}
+
+.notice-card {
+  background-image: url('../../public/image/Creation_of_Adam.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.submission-card {
+  background-image: url('../../public/image/jams.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.guideline-card {
+  background-image: url('../../public/image/sagyeong.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.formatting-card {
+  background-image: url('../../public/image/scriptor.jpg');
+  background-size: cover;
+  background-position: center;
 }

@@ -34,9 +34,12 @@ function ImageSlider() {
               className={i === current ? "slide active" : "slide"}
               key={i}
             > 
-            {i == current && (
-              <img src={slide} alt={`slide ${i}`} className="slide-image"/>
-            )}
+              {i == current && (
+                <img src={slide} alt={`slide ${i}`} className="slide-image"/>
+              )}
+              <div className="text-overlay">
+                미술사학연구회 KSAH
+              </div>
             </div>
             )
           }) 
