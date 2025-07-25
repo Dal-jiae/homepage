@@ -14,35 +14,56 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   gap: 50px;
+  background: #a4bd99fd;
 }
 
 .container div{
-  width: 500px;
+  width: 600px;
   height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.container div:hover {
+  cursor: pointer;
+  bottom: 10px;
+}
+
+.text-box{
+  position: absolute;
+  top: 60%;
+  background: rgba(255, 255, 255, 0.795);
+  position: absolute;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.text-box p {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
 
 .notice-card {
   background-image: url('../../public/image/Creation_of_Adam.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 .submission-card {
   background-image: url('../../public/image/jams.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 .guideline-card {
   background-image: url('../../public/image/sagyeong.jpg');
-  background-size: cover;
-  background-position: center;
 }
 
 .formatting-card {
   background-image: url('../../public/image/scriptor.jpg');
-  background-size: cover;
-  background-position: center;
 }
