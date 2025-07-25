@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import NoticeBord from "./NoticeBord";
 import ConferenceBoard from "./ConferenceBoard";
 import SymposiumBoard from "./SymposiumBoard";
+import { notes } from "./PathMap";
 
 function DetailPage() {
   const{category, id} = useParams();
@@ -19,7 +20,10 @@ function DetailPage() {
 
   return(
     <>
-
+    <div>
+      <h3>{notes[id].name}</h3>
+      <img src={notes[id].image} alt={notes[id].name}/>
+    </div>
     </>
   )
 }

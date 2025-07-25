@@ -5,6 +5,7 @@ import MainPage from './pages/MainPage'
 import ListDetail from './component/ListDetail'
 import { useState } from 'react'
 import DetailPage from './component/DetailPage'
+import Footer from './component/Footer'
 
 function App() {
   const [showList, setShowList] = useState(false);
@@ -19,6 +20,8 @@ function App() {
 
         <Route path='/detail/:category/:id' element={<DetailPage />}/>
       </Routes>
+
+      <Footer/>
     </>
   )
 }

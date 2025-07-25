@@ -19,4 +19,27 @@ const pathMap = {
   '심포지엄': { category: 'news', id: 'symposium' }
 }
 
-export default pathMap;
+const notes = {
+  greeting : {
+    name: '인사말',
+    image: "/image/회장-인사말.jpg"
+  },
+  history : {
+    name: '학회연혁',
+    image: '/image/학회연혁.jpg'
+  },
+  committee : {
+    name: '조직 및 위원회',
+    image: '/image/조직및위원회.jpg'
+  },
+  guidelines : {
+    name: '투고규정',
+    image: '/image/투고규정.jpg'
+  },
+  procedure: {
+    name: '투고절차 및 작성요령',
+    image: '/image/투고절차및작성요령.jpg'
+  }
+}
+
+export {pathMap, notes};
