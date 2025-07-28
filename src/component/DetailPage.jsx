@@ -5,6 +5,7 @@ import { notes } from "./PathMap";
 import NoticeBoard from "./NoticeBoard";
 import NoticeBoardDetail from "./NoticeBoardDetail";
 import NoticeBoardWrite from "./NoticeBoardWrite";
+import './DetailPage.css'
 
 function DetailPage() {
   const{category, id} = useParams();
@@ -32,9 +33,11 @@ function DetailPage() {
 
   return(
     <>
-    <div>
+    <div className="DetailPage-content">
       <h3>{notes[id].name}</h3>
-      <img src={notes[id].image} alt={notes[id].name}/>
+      <div className="DetailPage-img">
+        <img src={notes[id].image} alt={notes[id].name}/>
+      </div>
     </div>
     </>
   )

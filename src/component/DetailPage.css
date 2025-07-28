@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.DetailPage-content {
+  padding: 50px;
+}
+
+.DetailPage-content h3 {
+  border-bottom: 1px solid lightslategray;
+  padding-bottom: 2rem;
+}
+
+.DetailPage-img {
+  width: 1000px;
+  padding-top: 2rem;
+}
+
+.DetailPage-img img {
+  width: 100%;
+}

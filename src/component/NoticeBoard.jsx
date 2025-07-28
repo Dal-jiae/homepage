@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { loadNoticePosts } from ".";
+import './NoticeBoard.css'
 
 function NoticeBoard() {
 // 공지사항 목록
@@ -46,20 +47,29 @@ function NoticeBoard() {
   return(
     <>
     <div className="board-container">
-      <h3 className="board-title">게시판</h3>
+      <h3 className="board-title">공지사항</h3>
       <button onClick={handleWrite}>글쓰기</button>
       
-      <ul className="board-posts">
+      <table className="board-posts">
+        <thead>
+        <tr>
+          <th style={{width:'50%'}}>제목</th>
+          <th style={{width:'20%'}}>작성자</th>
+          <th style={{width:'30%'}}>작성시간</th>
+        </tr>
+        </thead>
+        <tbody>
         {posts.map((post) => {
           return(
-          <li key={post.id}>
-            <Link to={`?post=${post.id}`}>{post.title}</Link>
-            <span> 작성자 : {post.writer}</span>
-            <span> | 작성 시간 : {post.writingTime}</span>
-          </li>
+          <tr key={post.id}>
+            <td><Link to={`?post=${post.id}`}>{post.title}</Link></td>
+            <td><span>{post.writer}</span></td>
+            <td><span>{post.writingTime}</span></td>
+          </tr>
           );
         })}
-      </ul>
+        </tbody>
+      </table>
 
     </div>
     </>

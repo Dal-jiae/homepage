@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.board-container {
+  height: 800px;
+  padding: 50px;
+}
+
+.board-container button{
+  position: relative;
+  
+}
+
+.board-posts thead {
+  font-size: 1.2rem;
+}
+
+.board-posts tbody {
+  font-size: larger;
+}
