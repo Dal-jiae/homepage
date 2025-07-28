@@ -47,3 +47,41 @@
 .info p{
   margin: 0;
 }
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 99;
+}
+
+.modal-content {
+  background-color: white;
+  font-size: 2rem;
+
+  padding: 30px;
+  border-radius: 8px;
+  z-index: 100;
+  max-width: 50%;
+  position: relative;
+}
+
+.modal-content p:nth-child(1){
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  background-color: #ac3f2c;
+  color: azure;
+  border-radius: 8px;
+}
