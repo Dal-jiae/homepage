@@ -48,20 +48,21 @@ function NoticeBoard() {
     <>
     <div className="board-container">
       <h3 className="board-title">공지사항</h3>
-      <button onClick={handleWrite}>글쓰기</button>
       
       <table className="board-posts">
         <thead>
         <tr>
-          <th style={{width:'50%'}}>제목</th>
+          <th style={{width:'10%'}}>번호</th>
+          <th style={{width:'40%'}}>제목</th>
           <th style={{width:'20%'}}>작성자</th>
           <th style={{width:'30%'}}>작성시간</th>
         </tr>
         </thead>
         <tbody>
-        {posts.map((post) => {
+        {posts.map((post, i) => {
           return(
           <tr key={post.id}>
+            <td>{i+1}</td>
             <td><Link to={`?post=${post.id}`}>{post.title}</Link></td>
             <td><span>{post.writer}</span></td>
             <td><span>{post.writingTime}</span></td>
@@ -71,6 +72,7 @@ function NoticeBoard() {
         </tbody>
       </table>
 
+      <button onClick={handleWrite}>글쓰기</button>
     </div>
     </>
   )
