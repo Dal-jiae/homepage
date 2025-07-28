@@ -21,7 +21,9 @@ function App() {
         <Route path='/detail/:category/:id' element={<DetailPage />}/>
       </Routes>
 
-      <Footer/>
+      <div className='Footer-body'>
+      <Footer />
+      </div>
     </>
   )
 }
