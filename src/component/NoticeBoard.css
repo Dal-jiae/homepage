@@ -46,3 +46,41 @@
 .board-posts tbody {
   font-size: larger;
 }
+
+.board-detail {
+  margin: 50px;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 2px solid rgb(63, 63, 63);
+}
+
+.board-detail h4 {
+  border-bottom: 1px solid lightslategray;
+  background-color: #f5f5f5;
+  padding-bottom: 2rem;
+}
+
+.board-detail-top {
+  border-bottom: 1px solid lightslategray;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.board-detail-content {
+  padding: 1rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid lightslategray;
+  min-height: 500px;
+}
+
+.board-detail button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #646464;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}

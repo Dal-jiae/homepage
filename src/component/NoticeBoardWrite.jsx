@@ -26,7 +26,7 @@ function NoticeBoardWrite() {
   }
 
   const backToBoard = () => {
-    navigate('/')
+    navigate('/detail/news/notice')
   }
 
   return(
