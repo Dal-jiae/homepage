@@ -7,8 +7,9 @@
 
 .list-detail-container.show {
   display: flex;
-  gap: 110px;
-  padding-left: 320px;
+  font-size: 1.2rem;
+  gap: 95px;
+  padding-left: 310px;
 }
 
 .category-section {

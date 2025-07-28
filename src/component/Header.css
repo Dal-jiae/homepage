@@ -1,4 +1,7 @@
 #navbarNav li {
-  padding-left: 200px;
+  padding-left: 180px;
 }
 
+.container-fluid {
+  font-size: 1.5rem;
+}

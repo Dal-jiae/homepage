@@ -28,7 +28,6 @@ function DetailPage() {
       return <NoticeBoard />;
     };
     if(id === 'conference') return <ConferenceBoard/>;
-    if(id === 'symposium') return <SymposiumBoard/>;
   }
 
   return(
