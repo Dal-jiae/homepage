@@ -1,0 +1,29 @@
+.MapPage {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.MapPage h3 {
+  border-bottom: 1px solid lightslategray;
+  padding-bottom: 2rem;
+}
+
+.map-container {
+  width: 100%;
+  padding: 2rem;
+}
+
+.map-description {
+  font-size: 1.2rem;
+  padding-top: 2rem;
+}
+
+.map-description h4 {
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline lightslategray;
+}
+
+.map-description p {
+  margin-bottom: 0.2rem;
+}

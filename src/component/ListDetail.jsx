@@ -20,7 +20,7 @@ function ListDetail({show}){
     },
     { key: 'news',
       title: '학회소식',
-      items: ['공지사항', '정기학술대회']
+      items: ['공지사항']
     },
   ];
 

@@ -14,9 +14,7 @@ const pathMap = {
   '온라인 논문투고': { external: 'https://karthistory.jams.or.kr/' },
 
   // 학회소식
-  '공지사항': { category: 'news', id: 'notice' },
-  '정기학술대회': { category: 'news', id: 'conference' },
-  '심포지엄': { category: 'news', id: 'symposium' }
+  '공지사항': { category: 'news', id: 'notice' }
 }
 
 const notes = {

@@ -1,6 +1,4 @@
 import { useParams, useSearchParams } from "react-router-dom";
-import ConferenceBoard from "./ConferenceBoard";
-import SymposiumBoard from "./SymposiumBoard";
 import { notes } from "./PathMap";
 import NoticeBoard from "./NoticeBoard";
 import NoticeBoardDetail from "./NoticeBoardDetail";
@@ -26,8 +24,7 @@ function DetailPage() {
       if(postId) return <NoticeBoardDetail id={postId} />;
       
       return <NoticeBoard />;
-    };
-    if(id === 'conference') return <ConferenceBoard/>;
+    }
   }
 
   return(
