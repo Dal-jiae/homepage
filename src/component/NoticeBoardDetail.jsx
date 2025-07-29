@@ -20,14 +20,19 @@ if(!post) return <div>글을 찾을 수 없습니다.</div>
 
   return(
     <>
-    <div className="board-detail">
-      <h4>{post.title}</h4>
-      <div className="board-detail-top">
-        <p>작성자: {post.writer}</p>
-        <p>작성일: {post.writingTime}</p>
+    <div className="board-container">
+    <h3 className="board-title">공지사항</h3>
+
+      <div className="board-detail">
+        <h4>{post.title}</h4>
+        <div className="board-detail-top">
+          <p>작성자: {post.writer}</p>
+          <p>작성일: {post.writingTime}</p>
+        </div>
+        <div className="board-detail-content">{post.content}</div>
+        <button onClick={() => navigate("?")}>목록으로</button>
       </div>
-      <div className="board-detail-content">{post.content}</div>
-      <button onClick={() => navigate("?")}>목록으로</button>
+      
     </div>
     </>
   )

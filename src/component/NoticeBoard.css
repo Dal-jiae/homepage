@@ -10,7 +10,7 @@
 }
 
 .board-container button{
-  display: block;
+  display: flex;
   margin-left: auto;
   padding: 10px 20px;
   background-color: #007bff;
@@ -24,10 +24,10 @@
   background-color: #0056b3;
 }
 
-.board-posts {
+.board-posts, .writer-box {
   width: 100%;
-  /* border-collapse: collapse; */
-  margin-top: 30px;
+  border-collapse: collapse;
+  margin-top: 50px;
   margin-bottom: 2rem;
 }
 
@@ -37,36 +37,42 @@
   font-weight: bold;
 }
 
-.board-posts th, td{
-  border: 1px solid #ddd;
+.board-posts th {
+  border-top: 5px solid #757575;
+  border-bottom: 1px solid #ddd;
   padding: 1rem;
   text-align: center;
 }
 
-.board-posts tbody {
+.board-posts td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
   font-size: larger;
 }
 
-.board-detail {
-  margin: 50px;
+.board-detail, .writer-box {
   padding: 30px;
   box-sizing: border-box;
-  border: 2px solid rgb(63, 63, 63);
 }
 
-.board-detail h4 {
+.board-detail h4, .board-container h4 {
+  border-top: 5px solid #757575;
   border-bottom: 1px solid lightslategray;
   background-color: #f5f5f5;
-  padding-bottom: 2rem;
+  padding: 2rem;
+  margin: 0;
 }
 
 .board-detail-top {
   border-bottom: 1px solid lightslategray;
   padding: 1rem;
   font-size: 1.3rem;
+  display: flex;
+  gap: 1em;
 }
 
-.board-detail-content {
+.board-detail-content{
   padding: 1rem;
   font-size: 1.3rem;
   border-bottom: 1px solid lightslategray;
@@ -83,4 +89,72 @@
   border: none;
   border-radius: 8px;
   font-size: 1rem;
+}
+
+
+
+/* NoticeBoardWrite */
+.writer-box form {
+  padding: 1rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid lightslategray;
+  min-height: 500px;
+  
+}
+
+.input-group {
+  border-bottom: 1px solid lightslategray;
+}
+
+.input-group1, .input-group2 {
+  padding: 1rem;
+  display: flex;
+  gap: 1em;
+}
+
+.writer-text {
+  padding: 2rem;
+}
+
+.writer-box textarea{
+  min-width: 100%;
+  min-height: 500px;
+  padding: 1rem;
+}
+
+.button-group {
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.button-group button:nth-child(2) {
+  display: flex;
+  /* margin-left: auto; */
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.button-group button:nth-child(2):hover {
+  background-color: #a00000;
+}
+
+.button-group button:nth-child(1){
+  display: flex;
+  /* margin-left: auto; */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.button-group button:nth-child(1):hover{
+  background-color: #0056b3;
 }
