@@ -50,7 +50,6 @@
   font-size: 1.8rem;
 }
 
-
 .notice-card {
   background-image: url('../../public/image/Creation_of_Adam.jpg');
 }
@@ -65,4 +64,36 @@
 
 .formatting-card {
   background-image: url('../../public/image/scriptor.jpg');
+}
+
+.Main-bottom {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #73b349a8;
+}
+
+.col {
+  width: 600px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background: #ffffff;
+  width: 100%;
+  height: 400px;
+}
+
+.post-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  width: 100%;
+  height: 400px;
 }

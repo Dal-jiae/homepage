@@ -40,7 +40,38 @@ function MainPage() {
       </div>
 
       <div className="Main-bottom">
+        <div className="col col-1"> 
+          <div className="cell">
+            <form className="search-form">
+            <h3>논문검색</h3>
+            <p>미술사학연구회의 논문을 검색하실 수 있습니다.</p>
+              <div className="form">
+              <input 
+                type="search"
+                placeholder="검색어를 입력해주세요."
+                className="from-input"
+                />
+              <button onClick={()=>{
+                  window.open('https://www.dbpia.co.kr/', '_blank'); // 외부 사이트는 새 창으로
+                  // navigate('/detail/journal/search'); 
+                }}>검색</button>
+              </div>
+            </form>
+          </div>
+        </div> 
 
+        <div className="col col-2">
+          <div className="post-box">
+            <h2>최신 학술지 목록</h2>
+            <ul>
+              <li>제 1호 - 2023년 1월</li>
+              <li>제 2호 - 2023년 2월</li>
+              <li>제 3호 - 2023년 3월</li>
+              <li>제 4호 - 2023년 4월</li>
+              <li>제 5호 - 2023년 5월</li>
+            </ul>
+          </div>  
+        </div>  
       </div>
 
     </>

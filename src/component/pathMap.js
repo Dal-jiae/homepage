@@ -6,7 +6,7 @@ const pathMap = {
 
   // 학회지
   '투고규정': {category:'journal', id:'guidelines'},
-  '미술사학보 논문검색': { category: 'journal', id: 'search' },
+  '미술사학보 논문검색': { external: 'https://www.dbpia.co.kr/' },
 
   // 논문투고
   '투고절차 및 작성요령': { category: 'submit', id: 'procedure' },
@@ -14,7 +14,7 @@ const pathMap = {
   '온라인 논문투고': { external: 'https://karthistory.jams.or.kr/' },
 
   // 학회소식
-  '공지사항': { category: 'news', id: 'notice' }
+  '공지사항': { category: 'news', id: 'notice' },
 }
 
 const notes = {
