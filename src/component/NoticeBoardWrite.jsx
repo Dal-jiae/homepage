@@ -21,7 +21,7 @@ function NoticeBoardWrite() {
       writingTime: new Date().toLocaleString(),
     };
     const savedPosts = loadNoticePosts();
-    const updatePosts = [newPost, ...savedPosts];
+    const updatePosts = [...savedPosts, newPost];
     saveNoticePosts(updatePosts);
     navigate("/detail/news/notice");
   }
@@ -71,12 +71,12 @@ function NoticeBoardWrite() {
           required
         />
         </div>
-      </form>
 
         <div className="button-group">
           <button type='submit'>저장</button>
           <button type='button' onClick={backToBoard}>취소</button>
         </div>
+      </form>
 
       </div>
     </div>

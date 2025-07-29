@@ -59,10 +59,10 @@ function NoticeBoard() {
         </tr>
         </thead>
         <tbody>
-        {posts.map((post, i) => {
+        {posts.slice().reverse().map((post, i) => {
           return(
           <tr key={post.id}>
-            <td>{i+1}</td>
+            <td>{posts.length - i}</td>
             <td><Link to={`?post=${post.id}`}>{post.title}</Link></td>
             <td><span>{post.writer}</span></td>
             <td><span>{post.writingTime}</span></td>
@@ -72,7 +72,7 @@ function NoticeBoard() {
         </tbody>
       </table>
 
-      <button onClick={handleWrite}>글쓰기</button>
+      <button className="button-write" onClick={handleWrite}>글쓰기</button>
     </div>
     </>
   )
