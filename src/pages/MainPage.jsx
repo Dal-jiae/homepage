@@ -39,6 +39,10 @@ function MainPage() {
         }
       </div>
 
+      <div className="Main-bottom">
+
+      </div>
+
     </>
   )
 }

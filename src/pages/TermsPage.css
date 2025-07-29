@@ -1,4 +1,4 @@
-.MapPage {
+.TermsPage {
   padding: 50px;
   box-sizing: border-box;
   display: flex;
@@ -6,31 +6,23 @@
   align-items: center;
 }
 
-.MapPage h3 {
+.TermsPage h3 {
   border-bottom: 1px solid lightslategray;
   padding-bottom: 2rem;
 }
 
-.map-container {
-  width: 100%;
-  padding: 2rem;
-}
-
-.Map {
-  border: 5px solid #808080;
-}
-
-.map-description {
+.Terms-content {
+  padding-top: 2rem;
   font-size: 1.2rem;
-  padding: 50px;
+  line-height: 2;
+  color: #333;
+  align-self: flex-start;
+  width: 100%;
 }
 
-.map-description h4 {
+
+.Terms-content h4 {
   margin-bottom: 1.2rem;
   font-weight: bold;
   text-decoration: underline lightslategray;
-}
-
-.map-description p {
-  margin-bottom: 0.2rem;
 }

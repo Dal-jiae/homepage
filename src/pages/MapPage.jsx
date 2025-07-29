@@ -9,7 +9,7 @@ function MapPage() {
 
       <div className="map-container">
 
-        <Map // 지도를 표시할 Container
+        <Map className="Map"// 지도를 표시할 Container
           center={{
             // 지도의 중심좌표
             lat: 37.578969,

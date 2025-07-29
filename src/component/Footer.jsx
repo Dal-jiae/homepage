@@ -32,9 +32,6 @@ function Footer() {
           <li onClick={()=>{navigate('/member/terms')}} style={{ cursor: 'pointer' }}>
             이용약관
             </li>
-          <li onClick={()=>{navigate('/member/privacy')}} style={{ cursor: 'pointer' }}>
-            개인정보처리방침
-            </li>
           <li onClick={()=>{navigate('/member/map')}} style={{ cursor: 'pointer' }}>
             찾아오시는 길
             </li>

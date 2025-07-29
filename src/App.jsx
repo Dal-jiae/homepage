@@ -7,6 +7,7 @@ import { useState } from 'react'
 import DetailPage from './component/DetailPage'
 import Footer from './component/Footer'
 import MapPage from './pages/MapPage'
+import TermsPage from './pages/TermsPage'
 
 function App() {
   const [showList, setShowList] = useState(false);
@@ -21,6 +22,7 @@ function App() {
 
         <Route path='/detail/:category/:id' element={<DetailPage />}/>
         <Route path='/member/map' element={<MapPage/>}/>
+        <Route path='/member/terms' element={<TermsPage/>}/>
       </Routes>
 
       <div className='Footer-body'>

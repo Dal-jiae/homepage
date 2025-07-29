@@ -8,7 +8,7 @@ function Header ({setShowList, showList}) {
     <>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" onClick={() => navigate('/')}>미술사학연구회</a>
+        <a class="navbar-brand" onClick={() => navigate('/')} style={{ cursor: "pointer" }}>미술사학연구회</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

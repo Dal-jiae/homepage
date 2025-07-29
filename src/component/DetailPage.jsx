@@ -4,6 +4,7 @@ import NoticeBoard from "./NoticeBoard";
 import NoticeBoardDetail from "./NoticeBoardDetail";
 import NoticeBoardWrite from "./NoticeBoardWrite";
 import './DetailPage.css'
+import ArtSearchPage from "../pages/ArtSearchPage";
 
 function DetailPage() {
   const{category, id} = useParams();
@@ -26,6 +27,7 @@ function DetailPage() {
       return <NoticeBoard />;
     }
   }
+  if(category === 'journal' && id === 'search') return <ArtSearchPage/>
 
   return(
     <>
