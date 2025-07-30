@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Main-top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #5f8661;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 50px;
+}
+
+.container div{
+  width: 600px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container div:hover {
+  cursor: pointer;
+  bottom: 10px;
+}
+
+.text-box{
+  position: absolute;
+  top: 60%;
+  background: rgba(255, 255, 255, 0.795);
+  position: absolute;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.text-box p {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.notice-card {
+  background-image: url('../../public/image/Creation_of_Adam.jpg');
+}
+
+.submission-card {
+  background-image: url('../../public/image/jams.jpg');
+}
+
+.guideline-card {
+  background-image: url('../../public/image/sagyeong.jpg');
+}
+
+.formatting-card {
+  background-image: url('../../public/image/scriptor.jpg');
+}
+
+.Main-bottom {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #73b349a8;
+}
+
+.col {
+  width: 650px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background: #ffffff;
+  width: 100%;
+  height: 400px;
+  background-image: url('../../public/image/Jeong_Seon-Ingok.yugeodo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.search-form {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.452);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-form h3 {
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.search-form p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.search-form input {
+  width: 400px;
+  height: 50px;
+  border: none;
+  padding-left: 10px;
+}
+
+.search-form button {
+  width: 90px;
+  height: 50px;
+  border: none;
+  background: #5f8661;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.post-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #ffffff;
+  width: 100%;
+  height: 400px;
+  padding: 25px 20px;
+}
+
+.post-box h3 {
+  color: #5f8661;
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+
+.post-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+  border-bottom: 0.5px solid #afafafc7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-box li {
+  width: 100%;
+  padding: 20px 0;
+  border-top: 0.5px solid #afafafc7;
+}
+
+.post-box li a {
+  text-decoration: none;
+  color: #636363;
+}
+
+.post-box h4{
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.post-box p {
+  font-size: 0.9rem;
+  color: #636363;
+  margin: 0;
+}
