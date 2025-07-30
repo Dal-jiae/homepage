@@ -25,6 +25,10 @@ const deleteBoard = () => {
   navigate("/detail/news/notice");
 }
 
+const moveToUpdate = () => {
+  navigate(`/detail/news/notice?post=${postId}/edit`);
+}
+
   return(
     <>
     <div className="board-container">
@@ -38,7 +42,7 @@ const deleteBoard = () => {
         </div>
         <div className="board-detail-content">{post.content}</div>
         <div className="board-detail-edit">
-          <button>수정</button>
+          <button onClick={moveToUpdate}>수정</button>
           <button onClick={deleteBoard}>삭제</button>
         </div>
         <button onClick={() => navigate("?")}>목록으로</button>

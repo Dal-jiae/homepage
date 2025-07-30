@@ -23,6 +23,7 @@ function App() {
         <Route path='/detail/:category/:id' element={<DetailPage />}/>
         <Route path='/member/map' element={<MapPage/>}/>
         <Route path='/member/terms' element={<TermsPage/>}/>
+        <Route path="/detail/news/notice/:postId/edit" element={<UpdateForm />} />
       </Routes>
 
       <div className='Footer-body'>
