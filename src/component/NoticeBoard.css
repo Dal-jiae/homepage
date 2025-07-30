@@ -54,6 +54,10 @@
   color:#646464;
 }
 
+.board-posts a {
+  text-decoration: none;
+  color: inherit; /* 필요시 글자색 상속 */
+}
 
 /* BoardDetail */
 .board-detail {
