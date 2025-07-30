@@ -6,7 +6,7 @@ const pathMap = {
 
   // 학회지
   '투고규정': {category:'journal', id:'guidelines'},
-  '미술사학보 논문검색': { external: 'https://www.dbpia.co.kr/' },
+  '미술사학보 논문검색': { external: 'https://www.dbpia.co.kr/journal/publicationDetail?publicationId=PLCT00016071' },
 
   // 논문투고
   '투고절차 및 작성요령': { category: 'submit', id: 'procedure' },

@@ -4,7 +4,6 @@ import NoticeBoard from "./NoticeBoard";
 import NoticeBoardDetail from "./NoticeBoardDetail";
 import NoticeBoardWrite from "./NoticeBoardWrite";
 import './DetailPage.css'
-import ArtSearchPage from "../pages/ArtSearchPage";
 
 function DetailPage() {
   const{category, id} = useParams();
@@ -13,7 +12,7 @@ function DetailPage() {
   const externalLinkMap = {
     '온라인 논문투고' : 'https://karthistory.jams.or.kr/',
     '논문유사도검사': 'https://www.copykiller.com/',
-    '미술사학보 논문검색': 'https://www.dbpia.co.kr/' ,
+    '미술사학보 논문검색': 'https://www.dbpia.co.kr/journal/publicationDetail?publicationId=PLCT00016071' ,
   }
 
   if(category === 'news') {

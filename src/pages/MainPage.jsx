@@ -9,6 +9,12 @@ const arr = [
   {title:'논문 작성요령', url:'/detail/submit/procedure', img:'formatting'}
 ]
 
+const journalArr = [
+  {title: '인류세인가 자본세인가: 산투 모포켕의 풍경 사진과 기후변화시대 재현의 정치성', detail: '저자: 장선희 | 소속: 홍익대학교 | 페이지: 7-31 (25pages)', url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12172124'},
+  {title: '미술을 공격하는 미술 – 동시대 기후 예술에 대한 행동주의의 교훈', detail: '저자: 최종철 | 소속: 이화여자대학교 | 페이지: 81-113 (33pages)', url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12172127'}, 
+  {title: '비인간 증인: 인류세 시대 상호 돌봄의 장으로 기능하는 예술적 전략과 실천', detail: '저자: 조주현 | 소속: 연세대학교 | 페이지: 115-141 (27pages)', url: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12172128'},
+]
+
 function MainPage() {
   const navigate = useNavigate();
 
@@ -52,7 +58,7 @@ function MainPage() {
                 className="from-input"
                 />
               <button onClick={()=>{
-                  window.open('https://www.dbpia.co.kr/', '_blank'); // 외부 사이트는 새 창으로
+                  window.open('https://www.dbpia.co.kr/journal/publicationDetail?publicationId=PLCT00016071', '_blank'); // 외부 사이트는 새 창으로
                   // navigate('/detail/journal/search'); 
                 }}>검색</button>
               </div>
@@ -62,13 +68,16 @@ function MainPage() {
 
         <div className="col col-2">
           <div className="post-box">
-            <h2>최신 학술지 목록</h2>
+            <h3>최신 학술지 목록</h3>
             <ul>
-              <li>제 1호 - 2023년 1월</li>
-              <li>제 2호 - 2023년 2월</li>
-              <li>제 3호 - 2023년 3월</li>
-              <li>제 4호 - 2023년 4월</li>
-              <li>제 5호 - 2023년 5월</li>
+              {journalArr.map((data, i) => (
+                <li key={i}>
+                  <a href={data.url} target="_blank" rel="noopener noreferrer">
+                    <h4>{data.title}</h4>
+                    <p>{data.detail}</p>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>  
         </div>  
