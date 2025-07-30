@@ -11,7 +11,7 @@
   padding-bottom: 2rem;
 }
 
-.board-container button{
+.button-write{
   display: flex;
   margin-left: auto;
   padding: 10px 20px;
@@ -22,7 +22,7 @@
   font-size: 1rem;
 }
 
-.board-container button:hover{
+.button-write:hover{
   background-color: #0056b3;
 }
 
@@ -90,7 +90,7 @@
   min-height: 500px;
 }
 
-.board-detail button {
+.board-detail > button {
   display: block;
   margin: auto;
   margin-top: 20px;
@@ -102,6 +102,44 @@
   font-size: 1rem;
 }
 
+.board-detail button:hover {
+  background-color: #404040;
+}
+
+.board-detail-edit {
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.board-detail-edit button:nth-child(1) {
+  background-color: #00af43;
+  display: flex;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.board-detail-edit button:nth-child(1):hover {
+  background-color: #007f2a;
+}
+
+.board-detail-edit button:nth-child(2) {
+  background-color: #ff0000;
+  display: flex;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.board-detail-edit button:nth-child(2):hover {
+  background-color: #a00000;
+}
 
 
 /* NoticeBoardWrite */
