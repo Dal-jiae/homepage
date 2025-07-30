@@ -31,6 +31,7 @@ if(!post) return <div>글을 찾을 수 없습니다.</div>
         </div>
         <div className="board-detail-content">{post.content}</div>
         <button onClick={() => navigate("?")}>목록으로</button>
+        <button>수정하기</button>
       </div>
       
     </div>

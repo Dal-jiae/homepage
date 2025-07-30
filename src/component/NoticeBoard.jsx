@@ -14,9 +14,9 @@ function NoticeBoard() {
       const dummy = [
       {
         id: Date.now(),
-        title: "첫 번째 공지사항",
+        title: "[시스템 점검 안내] 8월 5일(월) 오전 2시 ~ 5시",
         writer: "관리자",
-        content: "집에 가고 싶어요",
+        content: "집에 가고 안녕하세요, 미술사학연구회 회원 여러분. 원활한 서비스 제공을 위해 8월 5일 월요일 오전 2시부터 5시까지 시스템 점검이 진행됩니다. 점검 시간 동안 서비스 이용이 일시적으로 제한될 수 있으니 이용에 참고 부탁드립니다. 감사합니다.",
         writingTime: new Date().toLocaleString(),
       },
       {
