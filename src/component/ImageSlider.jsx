@@ -31,10 +31,10 @@ function ImageSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // 슬라이드 전환 시간 (5초)
+    }, 5000); 
 
     return () => clearInterval(interval); // 컴포넌트 언마운트 시 인터벌 클리어
-  }, [length]);
+  }, [current]);
 
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null; // 슬라이드가 없을 경우 null 반환
