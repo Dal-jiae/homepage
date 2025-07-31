@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './ListDetail.css'
-import { pathMap } from './PathMap';
+import { pathMap } from './pathMap';
 
 function ListDetail({show}){
   const navigate = useNavigate();
