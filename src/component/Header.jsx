@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import './Header.css'
 
 function Header ({setShowList, showList}) {
   const navigate = useNavigate();
@@ -7,13 +6,35 @@ function Header ({setShowList, showList}) {
   return(
     <>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" onClick={() => navigate('/')} style={{ cursor: "pointer" }}>미술사학연구회</a>
+      <div class="container-fluid" style={{
+        fontSize: '1.2rem',
+        display: 'flex',
+        alignItems: 'center',
+      }}>
+        <a class="navbar-brand" onClick={() => navigate('/')} 
+        style={{ 
+          cursor: "pointer",
+            padding: '0',
+            fontSize: '1.5rem',
+            paddingLeft: '20px',
+          }}>
+            미술사학연구회</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav" onClick={()=> setShowList(!showList)}>
+        <div class="collapse navbar-collapse" id="navbarNav" style={{
+          display: 'flex',
+          justifyContent: 'pace-between'
+        }}>
+          <ul class="navbar-nav" onClick={()=> setShowList(!showList)} 
+          style={{ 
+              display: 'flex',
+              gap: '7.5rem', /* 항목 사이 간격, 원하는 값으로 조정 */
+              padding: '0',
+              margin: '0',
+              listStyle: 'none',
+              paddingLeft: '7rem'
+          }}>
             <li class="nav-item">
               <a class="nav-link" href="#" >학회 안내</a>
             </li>

@@ -1,15 +1,21 @@
 .list-detail-container {
-  display: none;
+  /* display: none;
   padding: 1rem;
   background: #f9f9f9;
+  border-top: 1px solid #ddd; */
+  display: none;
+  margin: 0;
+  background: rgba(187, 209, 150, 0.534);
   border-top: 1px solid #ddd;
 }
 
 .list-detail-container.show {
   display: flex;
   font-size: 1rem;
-  gap: 110px;
-  padding-left: 305px;
+  gap: 3rem;
+  padding-top: 1rem;
+  /* gap: 110px; */
+  padding-left: 17.8rem;
 }
 
 .category-section {
@@ -26,6 +32,8 @@
 
 .category-section li:hover {
   color: darkolivegreen;
+  text-decoration-line: underline;
   font-weight: bolder;
   cursor: pointer;
 }
+

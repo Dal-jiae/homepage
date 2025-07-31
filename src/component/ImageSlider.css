@@ -9,11 +9,15 @@
 .show-slider {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-height: 500px;
   position: relative;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
 }
 
 .show-slider::before {
@@ -26,13 +30,10 @@
 }
 
 .slide {
-  display: none;
-  width: 100%;
+  min-width: 100%;
   height: 100%;
-}
-
-.slide.active {
-  display: block;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .slide-image {

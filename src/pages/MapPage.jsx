@@ -2,6 +2,9 @@ import { Map, MapMarker } from "react-kakao-maps-sdk";
 import './MapPage.css';
 
 function MapPage() {
+
+  const destination = { lat: 37.578969, lng: 126.980439 }; // 학회 위치
+
   return(
     <>
     <div className="MapPage">
@@ -10,11 +13,7 @@ function MapPage() {
       <div className="map-container">
 
         <Map className="Map"// 지도를 표시할 Container
-          center={{
-            // 지도의 중심좌표
-            lat: 37.578969,
-            lng: 126.980439,
-          }}
+          center={destination} 
           style={{
             // 지도의 크기
             width: "100%",
@@ -23,13 +22,27 @@ function MapPage() {
           level={2} // 지도의 확대 레벨
         >
           <MapMarker // 마커를 생성합니다
-            position={{
-              // 마커가 표시될 위치입니다
-              lat: 37.578969,
-              lng: 126.980439,
-            }}
+            position={destination}
           />
         </Map>
+        
+        <a
+          href="https://map.kakao.com/link/to/학회장소,37.578969,126.980439"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ 
+            display: "inline-block", 
+            marginTop: "10px", 
+            padding: "8px 16px", 
+            background: "#5f8661", 
+            color: "#fff", 
+            textDecoration: "none", 
+            borderRadius: "4px" 
+          }}
+        >
+          카카오맵에서 길찾기
+        </a>
+
       <div className="map-description">
         <h4>지하철 이용</h4>
         <p>3호선 안국역 1번 출구 → 삼청로 따라 도보 약 10분</p> 

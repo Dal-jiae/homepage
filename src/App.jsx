@@ -8,6 +8,7 @@ import DetailPage from './component/DetailPage'
 import Footer from './component/Footer'
 import MapPage from './pages/MapPage'
 import TermsPage from './pages/TermsPage'
+import ScrollTop from './component/ScrollTop'
 
 function App() {
   const [showList, setShowList] = useState(false);
@@ -25,6 +26,7 @@ function App() {
         <Route path='/member/terms' element={<TermsPage/>}/>
       </Routes>
 
+      <ScrollTop />
       <div className='Footer-body'>
       <Footer />
       </div>

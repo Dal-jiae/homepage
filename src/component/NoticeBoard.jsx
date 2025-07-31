@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { loadNoticePosts } from ".";
 import './NoticeBoard.css'
+import dummyposts from "./dummypost";
 
 function NoticeBoard() {
 // 공지사항 목록
@@ -11,31 +12,8 @@ function NoticeBoard() {
   useEffect(() => {
     const saved = loadNoticePosts();
      if (!saved || saved.length === 0) {
-      const dummy = [
-      {
-        id: Date.now(),
-        title: "첫 번째 공지사항",
-        writer: "관리자",
-        content: "집에 가고 싶어요",
-        writingTime: new Date().toLocaleString(),
-      },
-      {
-        id: Date.now() + 1,
-        title: "두 번째 공지사항",
-        writer: "운영자",
-        content: "공지사항 내용입니다.",
-        writingTime: new Date().toLocaleString(),
-      },
-      {
-        id: Date.now() + 2,
-        title: "세 번째 공지사항",
-        writer: "관리자",
-        content: "추가 공지사항입니다.",
-        writingTime: new Date().toLocaleString(),
-      },
-      ];
-      localStorage.setItem("noticePosts", JSON.stringify(dummy));
-      setPosts(dummy);
+      localStorage.setItem("noticePosts", JSON.stringify(dummyposts));
+      setPosts(dummyposts);
     } else {
     setPosts(saved);
     }}, []);

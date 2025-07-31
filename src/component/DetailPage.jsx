@@ -4,6 +4,7 @@ import NoticeBoard from "./NoticeBoard";
 import NoticeBoardDetail from "./NoticeBoardDetail";
 import NoticeBoardWrite from "./NoticeBoardWrite";
 import './DetailPage.css'
+import UpdateForm from "./UpdateForm";
 
 function DetailPage() {
   const{category, id} = useParams();
@@ -17,15 +18,16 @@ function DetailPage() {
 
   if(category === 'news') {
     // 게시판 만들기
+    const sub = searchParams.get('mode');
+    const postId = searchParams.get('post');
     if(id === 'notice') {
-      const sub = searchParams.get('mode');
-      const postId = searchParams.get('post');
-
       if(sub === 'write') return <NoticeBoardWrite />;
+      if(sub === 'edit' && postId) return <UpdateForm id={postId} />;
       if(postId) return <NoticeBoardDetail id={postId} />;
       
       return <NoticeBoard />;
     }
+    return <div>404 Not Found</div>
   }
   // if(category === 'journal' && id === 'search') return <ArtSearchPage/>
 

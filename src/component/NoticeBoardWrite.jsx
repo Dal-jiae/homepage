@@ -23,6 +23,7 @@ function NoticeBoardWrite() {
     const savedPosts = loadNoticePosts();
     const updatePosts = [...savedPosts, newPost];
     saveNoticePosts(updatePosts);
+    alert("등록되었습니다.");
     navigate("/detail/news/notice");
   }
 
