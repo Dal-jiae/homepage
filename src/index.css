@@ -2,3 +2,19 @@ body {
   width: 1500px;
   margin: auto;
 }
+
+@media (max-width: 997px) {
+  .navbar,
+  .container-fluid {
+    min-width: 1500px;
+    max-width: 1500px;
+    width: 1500px;
+  }
+}
+
+
+@media (max-width: 997px) {
+  .show-slider {
+    width: 100%;
+  }
+}
