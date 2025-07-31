@@ -1,5 +1,5 @@
 import { useParams, useSearchParams } from "react-router-dom";
-import { notes } from "./PathMap";
+import { notes } from "./pathMap";
 import NoticeBoard from "./NoticeBoard";
 import NoticeBoardDetail from "./NoticeBoardDetail";
 import NoticeBoardWrite from "./NoticeBoardWrite";
