@@ -5,7 +5,7 @@ function Header ({setShowList, showList}) {
 
   return(
     <>
-    <nav className="navbar bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid" style={{
         fontSize: '1.2rem',
         display: 'flex',
