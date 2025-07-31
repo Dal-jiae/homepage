@@ -85,7 +85,7 @@
 
 .board-detail-content{
   padding: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   border-bottom: 1px solid lightslategray;
   min-height: 500px;
 }
@@ -192,7 +192,7 @@
 .writer-box textarea{
   min-width: 100%;
   min-height: 500px;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 .button-group {

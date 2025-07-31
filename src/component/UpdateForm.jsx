@@ -1,6 +1,7 @@
-import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { loadNoticePosts } from '.'; // 데이터 로딩 함수
+import './NoticeBoard.css';
 
 function UpdateForm() {
   const [searchParams] = useSearchParams();
@@ -52,10 +53,7 @@ function UpdateForm() {
     <div className="board-container" >
       <h3 className="board-title">공지사항</h3>
 
-      <div className="writer-box" 
-      style={{
-      borderBottom: '1px solid lightslategray'
-      }}>
+      <div className="writer-box" >
 
         <div 
         style={{
@@ -107,26 +105,13 @@ function UpdateForm() {
         />
         </div>
 
-        <div className="board-detail-edit">
-          <button onClick={handleUpdate}
-          style={{
-            backgroundColor: '#4CAF50',
-            color: 'white',
-            padding: '10px 20px',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer'
-          }}>수정 완료</button>
-          <button onClick={() => navigate(-1)} 
-          style={{
-            backgroundColor: '#f44336',
-            color: 'white',
-            padding: '10px 20px',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            marginLeft: '10px'
-          }}>취소</button>
+        <div className="board-detail-edit"
+        style={{
+          borderBottom: '1px solid lightslategray',
+          padding: '1rem',
+        }}>
+          <button onClick={handleUpdate}>수정 완료</button>
+          <button onClick={() => navigate(-1)}>취소</button>
         </div>
       </div>
     </div>
