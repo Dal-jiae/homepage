@@ -32,6 +32,7 @@
 
 .category-section li:hover {
   color: darkolivegreen;
+  text-decoration-line: underline;
   font-weight: bolder;
   cursor: pointer;
 }

@@ -26,7 +26,7 @@ const deleteBoard = () => {
 }
 
 const moveToUpdate = () => {
-  navigate(`/detail/news/notice?post=${postId}/edit`);
+  navigate(`/detail/news/notice?post=${postId}&mode=edit`);
 }
 
   return(
