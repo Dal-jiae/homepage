@@ -6,9 +6,9 @@ body {
 @media (max-width: 997px) {
   .navbar,
   .container-fluid {
-    min-width: 1500px;
-    max-width: 1500px;
-    width: 1500px;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
   }
 }
 

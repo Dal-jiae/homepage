@@ -10,6 +10,8 @@ function Header ({setShowList, showList}) {
         fontSize: '1.2rem',
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'space-between',
+        flexWrap: 'nowrap',
       }}>
         <a class="navbar-brand" onClick={() => navigate('/')} 
         style={{ 
@@ -19,9 +21,9 @@ function Header ({setShowList, showList}) {
             paddingLeft: '20px',
           }}>
             미술사학연구회</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
         <div className="collapse navbar-collapse" id="navbarNav" style={{
           display: 'flex',
           justifyContent: 'space-between'
@@ -29,6 +31,7 @@ function Header ({setShowList, showList}) {
           <ul className="navbar-nav" onClick={()=> setShowList(!showList)} 
           style={{ 
               display: 'flex',
+              flexDirection: 'row',
               gap: '7.5rem', /* 항목 사이 간격, 원하는 값으로 조정 */
               padding: '0',
               margin: '0',
