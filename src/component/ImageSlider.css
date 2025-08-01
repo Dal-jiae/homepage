@@ -53,6 +53,19 @@
   z-index: 3;
 }
 
+@media (max-width: 715px) {
+  .slider {
+    height: 300px;
+  }
+  .show-slider {
+    max-height: 300px;
+  }
+  .slide-image {
+    object-fit: cover;
+    background-color: #f0f0f0; /* 이미지 주변 여백 색상 */
+  }
+}
+
 .arrow {
   position: absolute;
   top: 50%;
