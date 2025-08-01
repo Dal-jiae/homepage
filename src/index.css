@@ -10,6 +10,10 @@ body {
     min-width: 100%;
     min-height: 100%;
   }
+  /* .navbar-nav {
+    gap: 7.5rem;
+    padding-left: 7rem;
+  } */
 }
 
 
